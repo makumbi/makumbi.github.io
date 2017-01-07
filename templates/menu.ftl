@@ -14,19 +14,8 @@
           <ul class="nav navbar-nav">
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html">Home</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>about.html">About</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.feed_file}">Subscribe</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Software Development</a></li>
-                <li><a href="#">Personal Development</a></li>
-                <li><a href="#">Soccer</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>personal-insights.html">Personal Insights</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>hacking-code.html">Hacking Code</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
