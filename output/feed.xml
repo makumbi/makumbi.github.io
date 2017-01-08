@@ -6,9 +6,69 @@
     <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sat, 7 Jan 2017 21:27:20 -0500</pubDate>
-    <lastBuildDate>Sat, 7 Jan 2017 21:27:20 -0500</lastBuildDate>
+    <pubDate>Sun, 8 Jan 2017 12:53:47 -0500</pubDate>
+    <lastBuildDate>Sun, 8 Jan 2017 12:53:47 -0500</lastBuildDate>
 
+    <item>
+      <title>Software Vulnerability - SQL Injection</title>
+      <link>http://jbake.org/blog/2017/software-vulnerability-sql-injection.html</link>
+      <pubDate>Sun, 8 Jan 2017 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2017/software-vulnerability-sql-injection.html</guid>
+      	<description>
+	&lt;p&gt;&lt;img src=&quot;/img/protect-against-sql-injection.png&quot; alt=&quot;insecure login&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In this article I create a simple form to demonstrate insecure interaction between a java based component&lt;br/&gt;and the outside world explaining why the form poses as a vulnerability to the overall application.&lt;br/&gt;Finally, I show how to properly secure the application. &lt;/p&gt;
+&lt;p&gt;A simple Java application is created with a simple login form that retrieves username and password using&lt;br/&gt;two JTextFields and storing them into the Derby Database.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/insecure-login.png&quot; alt=&quot;insecure login&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Once login button is pressed username and password is sent to be stored the DB.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The simple login application does not take into account other software vulnerabilities.&lt;br/&gt;We’re only demonstrating SQL Injection vulnerability. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/insecure-login-storing.png&quot; alt=&quot;insecure login storing&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The application works great, but when we take a look under the hood we find that this application is vulnerable&lt;br/&gt;to SQL Injection attacks because SQL statements are not prepared and are dynamically storing data directly into&lt;br/&gt;the database. &lt;/p&gt;
+&lt;h3&gt;Insecure Code&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;pre&gt;&lt;code&gt; private static void insertUserInfor(String userName, String userPass)
+    {
+        try
+        {
+            createConnection();
+            stmt = conn.createStatement();
+            stmt.execute(&amp;quot;insert into &amp;quot; + tableName + &amp;quot; values (&amp;#39;&amp;quot; +
+                    userName + &amp;quot;&amp;#39;, &amp;#39;&amp;quot; + userPass + &amp;quot;&amp;#39;)&amp;quot;);
+            
+            stmt.close();
+        }
+        catch (SQLException sqlExcept)
+        {
+            sqlExcept.printStackTrace();
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;SQL Injection attacks are the most prevent attacks to an application and inflicts the most damage exposing&lt;br/&gt;sensitive data. Injection attacks attempt to break into application databases by injecting malicious code,&lt;br/&gt;oftentimes in a form of SQL statements. They are often injected through form fields similar to the small&lt;br/&gt;application I created, but are also injected through uploads, 3rd party APIs, configuration files, input files etc. &lt;/p&gt;
+&lt;h3&gt;Secured Code&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;p&gt;The code snippet above shows the application retrieving username and password directly placing it into the SQL&lt;br/&gt;statement without validating or sanitizing the data. Essentially, the developer trusts the user not to&lt;br/&gt;inject malicious code. The user should never be trusted. Below I demonstrate how to properly prepare SQL statements&lt;br/&gt;in java. &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;private static void insertUserInfor(String userName, String userPass)
+    {
+        try
+        { 
+            // establish connection
+            createConnection();
+            String qTxt = &amp;quot;INSERT INTO &amp;quot; + tableName + &amp;quot;VALUES (?,?)&amp;quot;;
+            prepStmt = conn.prepareStatement(qTxt);
+            prepStmt.setString(1, userName);
+            prepStmt.setString(1, userPass);
+            
+            prepStmt.close();
+        }
+        catch (SQLException sqlExcept)
+        {
+            sqlExcept.printStackTrace();
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When SQL statements are prepared information received from the user is placed in a prepared statement and not directly&lt;br/&gt;into the SQL query, thus mitigating dynamic queries. &lt;/p&gt;
+&lt;p&gt;In this demonstration, I have alluded to mention another measure to take in order to mitigate SQL Injection attacks,&lt;br/&gt;which is to validate and sanitize data retrieved from the user. As we’ve mentioned, the application cannot trust data&lt;br/&gt;from the outside world. Information must be validated for content, length, format, and other factors before use. &lt;/p&gt;
+	</description>
+    </item>
     <item>
       <title>Fourth Post</title>
       <link>http://jbake.org/blog/2013/fourth-post.html</link>
