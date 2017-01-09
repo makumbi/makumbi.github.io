@@ -17,7 +17,7 @@
       	<description>
 	&lt;p&gt;In this article I create a simple form to demonstrate insecure interaction between a java based component&lt;br/&gt;and the outside world explaining why the form poses as a vulnerability to the overall application.&lt;br/&gt;Finally, I show how to properly secure the application. &lt;/p&gt;
 &lt;p&gt;A simple Java application is created with a simple login form that retrieves username and password using&lt;br/&gt;two JTextFields and storing them into the Derby Database.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/img/insecure-login.png&quot; alt=&quot;insecure login&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;img/insecure-login.png&quot; alt=&quot;insecure login&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Once login button is pressed username and password is sent to be stored the DB.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The simple login application does not take into account other software vulnerabilities.&lt;br/&gt;We’re only demonstrating SQL Injection vulnerability. &lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/img/insecure-login-storing.png&quot; alt=&quot;insecure login storing&quot; /&gt;&lt;/p&gt;
