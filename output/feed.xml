@@ -6,8 +6,8 @@
     <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Mon, 9 Jan 2017 13:57:38 -0500</pubDate>
-    <lastBuildDate>Mon, 9 Jan 2017 13:57:38 -0500</lastBuildDate>
+    <pubDate>Mon, 9 Jan 2017 14:09:00 -0500</pubDate>
+    <lastBuildDate>Mon, 9 Jan 2017 14:09:00 -0500</lastBuildDate>
 
     <item>
       <title>Software Vulnerability - SQL Injection</title>
@@ -17,10 +17,251 @@
       	<description>
 	&lt;p&gt;In this article I create a simple form to demonstrate insecure interaction between a java based component&lt;br/&gt;and the outside world explaining why the form poses as a vulnerability to the overall application.&lt;br/&gt;Finally, I show how to properly secure the application. &lt;/p&gt;
 &lt;p&gt;A simple Java application is created with a simple login form that retrieves username and password using&lt;br/&gt;two JTextFields and storing them into the Derby Database.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;img/insecure-login.png&quot; alt=&quot;insecure login&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Once login button is pressed username and password is sent to be stored the DB.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapphw2;
+
+import java.sql.*;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+
+public class JavaAppInsecureSQL implements ActionListener {
+    
+    private static String dbURL = &amp;quot;jdbc:derby://localhost:1527/derbyDB;create=true;&amp;quot;;
+    private static String tableName = &amp;quot;appusers&amp;quot;;
+    // jdbc Connection
+    private static Connection conn = null;
+    private static Statement stmt = null;
+    
+    JPanel totalGUI = new JPanel();
+    JPanel textPanel, panelForTextFields, completionPanel;
+    JLabel titleLabel, usernameLabel, passwordLabel, userLabel, passLabel;
+    JTextField usernameField, loginField;
+    JButton loginButton;
+    
+    String usernameText;
+    String passwordText;
+    
+    public JPanel createContentPane(){
+        // create bottom panel as a base for pane content     
+        totalGUI.setLayout(null);        
+        titleLabel = new JLabel(&amp;quot;Login Screen&amp;quot;);
+        titleLabel.setLocation(0,0);
+        titleLabel.setSize(290, 30);
+        titleLabel.setHorizontalAlignment(0);
+        totalGUI.add(titleLabel);
+        
+        // Creation of a Panel to contain the JLabels
+        textPanel = new JPanel();
+        textPanel.setLayout(null);
+        textPanel.setLocation(10, 35);
+        textPanel.setSize(70, 80);
+        totalGUI.add(textPanel);
+
+         // Username Label
+        usernameLabel = new JLabel(&amp;quot;Username&amp;quot;);
+        usernameLabel.setLocation(0, 0);
+        usernameLabel.setSize(70, 40);
+        usernameLabel.setHorizontalAlignment(4);
+        textPanel.add(usernameLabel);
+
+        // Login Label
+        passwordLabel = new JLabel(&amp;quot;Password&amp;quot;);
+        passwordLabel.setLocation(0, 40);
+        passwordLabel.setSize(70, 40);
+        passwordLabel.setHorizontalAlignment(4);
+        textPanel.add(passwordLabel);
+
+        // TextFields Panel Container
+        panelForTextFields = new JPanel();
+        panelForTextFields.setLayout(null);
+        panelForTextFields.setLocation(110, 40);
+        panelForTextFields.setSize(100, 70);
+        totalGUI.add(panelForTextFields);
+
+        // Username Textfield
+        usernameField = new JTextField(8);
+        usernameField.setLocation(0, 0);
+        usernameField.setSize(100, 30);
+        panelForTextFields.add(usernameField);
+
+        // Login Textfield
+        loginField = new JTextField(8);
+        loginField.setLocation(0, 40);
+        loginField.setSize(100, 30);
+        panelForTextFields.add(loginField);
+        
+        // Creation of a Panel to contain the completion JLabels
+        completionPanel = new JPanel();
+        completionPanel.setLayout(null);
+        completionPanel.setLocation(240, 35);
+        completionPanel.setSize(70, 80);
+        totalGUI.add(completionPanel);
+
+        // Username Label
+        userLabel = new JLabel(&amp;quot;Wrong&amp;quot;);
+        userLabel.setForeground(Color.red);
+        userLabel.setLocation(0, 0);
+        userLabel.setSize(70, 40);
+        completionPanel.add(userLabel);
+
+        // Login Label
+        passLabel = new JLabel(&amp;quot;Wrong&amp;quot;);
+        passLabel.setForeground(Color.red);
+        passLabel.setLocation(0, 40);
+        passLabel.setSize(70, 40);
+        completionPanel.add(passLabel);
+
+        // Button for Logging in
+        loginButton = new JButton(&amp;quot;Login&amp;quot;);
+        loginButton.setLocation(130, 120);
+        loginButton.setSize(80, 30);
+        loginButton.addActionListener(this);
+        totalGUI.add(loginButton);
+
+        totalGUI.setOpaque(true);    
+        return totalGUI;  
+    }
+    
+    public void actionPerformed(ActionEvent e) {
+
+        if(e.getSource() == loginButton)
+        {
+            if(!(usernameField.getText().trim().isEmpty()))
+            {
+                usernameText = usernameField.getText().trim();
+                userLabel.setForeground(Color.green);
+                userLabel.setText(&amp;quot;Correct!&amp;quot;);
+            }
+            else
+            {
+                userLabel.setForeground(Color.red);
+                userLabel.setText(&amp;quot;Wrong!&amp;quot;);
+            }
+
+            if(!(loginField.getText().trim().isEmpty()))
+            {
+                passwordText = loginField.getText().trim();
+                passLabel.setForeground(Color.green);
+                passLabel.setText(&amp;quot;Correct!&amp;quot;);
+            }
+            else
+            {
+                passLabel.setForeground(Color.red);
+                passLabel.setText(&amp;quot;Wrong!&amp;quot;);
+            }
+
+            if((userLabel.getForeground() == Color.green) 
+			&amp;amp;&amp;amp; (passLabel.getForeground() == Color.green))
+            {
+                
+                try{
+                    titleLabel.setText(&amp;quot;Storing into database....&amp;quot;);
+                    // insert user information into database
+                    insertUserInfor(usernameText, passwordText);
+                    
+                    titleLabel.setText(&amp;quot;Information stored!&amp;quot;);
+                }
+                catch(Exception ex){
+                    ex.getStackTrace();
+                }finally{
+                    loginButton.setEnabled(false);
+                    // shutdown database connections
+                    shutdown();
+                }
+                
+            }
+        }
+    }
+    
+    private static void createAndShowGUI() {
+
+        JFrame.setDefaultLookAndFeelDecorated(true);
+        JFrame frame = new JFrame(&amp;quot; Insecure SQL Java App &amp;quot;);
+
+        JavaAppInsecureSQL demo = new JavaAppInsecureSQL();
+        frame.setContentPane(demo.createContentPane());
+        
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(310, 200);
+        frame.setVisible(true);
+    }
+   
+    public static void main(String[] args){
+     
+        //Event-dispatching thread:
+        //creating and showing this application&amp;#39;s GUI.
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                createAndShowGUI();
+            }
+        });
+        
+    }
+    
+    private static void createConnection()
+    {
+        try
+        {
+            Class.forName(&amp;quot;org.apache.derby.jdbc.ClientDriver&amp;quot;).newInstance();
+            //Get a connection
+            conn = DriverManager.getConnection(dbURL); 
+            
+        }
+        catch (ClassNotFoundException | InstantiationException | IllegalAccessException | SQLException except)
+        {
+            except.printStackTrace();
+        }
+        
+    }
+    
+    private static void insertUserInfor(String userName, String userPass)
+    {
+        try
+        {
+            createConnection();
+            stmt = conn.createStatement();
+            stmt.execute(&amp;quot;insert into &amp;quot; + tableName + &amp;quot; values (&amp;#39;&amp;quot; +
+                    userName + &amp;quot;&amp;#39;, &amp;#39;&amp;quot; + userPass + &amp;quot;&amp;#39;)&amp;quot;);
+            
+            stmt.close();
+        }
+        catch (SQLException sqlExcept)
+        {
+            sqlExcept.printStackTrace();
+        }
+    }
+    
+   
+    private static void shutdown()
+    {
+        try
+        {
+            if (stmt != null)
+            {
+                stmt.close();
+            }
+            if (conn != null)
+            {
+                DriverManager.getConnection(dbURL + &amp;quot;;shutdown=true&amp;quot;);
+                conn.close();
+            }           
+        }
+        catch (SQLException sqlExcept)
+        {
+            sqlExcept.getStackTrace();
+        }
+
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once login button is pressed, the username and password is sent to be stored in the database.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The simple login application does not take into account other software vulnerabilities.&lt;br/&gt;We’re only demonstrating SQL Injection vulnerability. &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/img/insecure-login-storing.png&quot; alt=&quot;insecure login storing&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;The application works great, but when we take a look under the hood we find that this application is vulnerable&lt;br/&gt;to SQL Injection attacks because SQL statements are not prepared and are dynamically storing data directly into&lt;br/&gt;the database. &lt;/p&gt;
 &lt;h3&gt;Insecure Code&lt;/h3&gt;
 &lt;hr/&gt;
