@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This space is designed for software developers, technology enthusiast and open minded individuals unafraid to question everything">
     <meta name="author" content="Alex Makumbi">
-    <meta name="keywords" content="Software Developer, Technology, Blog, Personal Development, Tutorials">
+    <meta name="keywords" content="Software Developer, Technology, Blog, Personal Development, Tutorials, 
+                Systems engineering, systems security engineering, assurance, trustworthiness, 
+                information security, information security policy, security architecture, security design, 
+                system life cycle, verification, validation, disposal, integration, implementation, stakeholder, 
+                security requirements, protection needs, resiliency, requirements analysis, risk management, 
+                risk assessment, risk treatment, security authorization, engineering trades, systems, 
+                system-of-systems, system element, system component, penetration testing, inspection, review, 
+                developmental engineering, field engineering, specifications">
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
