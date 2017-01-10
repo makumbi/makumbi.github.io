@@ -3,7 +3,7 @@
 ![Image](assets/img/Makumbi.jpg)
 
 - [Home](https://makumbi.github.io/output/index.html)
-- [Articles](https://makumbi.github.io/output/about.html)
+- [About](https://makumbi.github.io/output/about.html)
 - [Archives](https://makumbi.github.io/output/archive.html)
 
 My name is Alex. I am currently pursuing a second Bachelors in Software Development and Security from University of Maryland University College ‘17. My first Bachelors was in Political Science and Economics from Christopher Newport University ‘14. 
