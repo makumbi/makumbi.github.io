@@ -1,9 +1,10 @@
 ## Welcome to Alex Makumbi's Blog!
 
-![Image]()
+![Image](assets/img/Makumbi.jpg)
 
-- Bulleted
-- List
+- [Home](https://makumbi.github.io/output/index.html)
+- [Articles](https://makumbi.github.io/output/about.html)
+- [Archives](https://makumbi.github.io/output/archive.html)
 
 
 
