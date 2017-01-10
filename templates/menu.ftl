@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" >makumbi
+        <a class="navbar-brand" href="https://makumbi.github.io/">makumbi
           </a>
         </div>
         <div class="navbar-collapse collapse">
