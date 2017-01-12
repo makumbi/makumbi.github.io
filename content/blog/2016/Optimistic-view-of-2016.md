@@ -45,8 +45,6 @@ some enhance your life making you a better person emotionally, professionally or
 some enter your life to only pull you back. On August 16 th 2015, I was able to have the girl of my dreams
 enter my life. She not only makes my heart sing sounds of joy each time I see her, but she stimulates my
 brain and my thinking each time we talk. I look forward sharing my journey with her this year. My family
-also plays a massive roll; they are always supportive, always patent with me and are always looking out
+also plays a massive role; they are always supportive, always patent with me and are always looking out
 for my best interest even when I cannot see it at the time. I love all of them and cannot wait to make
 them proud some day.
-
-Whoever reads this post, thank you for reading. 

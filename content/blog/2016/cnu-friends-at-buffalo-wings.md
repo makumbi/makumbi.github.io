@@ -58,6 +58,6 @@ Most was positive it seems everyone is working hard starting at the bottom in en
 out apartments contemplating on what city to move to and whether to stay in a particular job for a
 certain period of time or not - basically doing what I am doing now. 
 
-Ending on a good note, Steve Landry’s birthday is Jan 26 2016. Very much would love to celebrate with
+Ending on a good note, Steve's birthday is Jan 26 2016. Very much would love to celebrate with
 him but knowing me I probably will not get the chance. After dinner I met up with Mary and took her
 Bowling. Probably the highlight of my night/day.
