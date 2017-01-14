@@ -17,4 +17,4 @@ I am envisioning many sleepless nights and long days that will require a high le
 his can be done, it has been done, people have battled through far more challenging roads that I really have 
 no excuse whatsoever. What will keep me going will be my girl friend as she’ll also be battling her own battles, 
 my younger brother who has a gigantic task of work studying at UPenn and the support and love from my mom and older 
-brother. I can do it and I will do it!!!
+brother. 

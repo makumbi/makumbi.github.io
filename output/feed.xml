@@ -6,9 +6,95 @@
     <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Thu, 12 Jan 2017 00:19:41 -0500</pubDate>
-    <lastBuildDate>Thu, 12 Jan 2017 00:19:41 -0500</lastBuildDate>
+    <pubDate>Sat, 14 Jan 2017 14:57:13 -0500</pubDate>
+    <lastBuildDate>Sat, 14 Jan 2017 14:57:13 -0500</lastBuildDate>
 
+    <item>
+      <title>Software Development Life Cycle (SDLC) Process Comparison</title>
+      <link>http://jbake.org/blog/2017/sdlc-process-comparison.html</link>
+      <pubDate>Sat, 14 Jan 2017 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2017/sdlc-process-comparison.html</guid>
+      	<description>
+	&lt;p&gt;This article allows me to demonstrate my current understanding of the various software development life-cycles. I will be selecting two traditional Software Engineering Phases and compare and contrast each of them focusing on: How they differ? How they are similar? And define one advantage and one disadvantage for each SDLC process.&lt;/p&gt;
+&lt;p&gt;Software Development Life Cycle (SDLC) is a well-defined, structured sequence of stages in software engineering to develop an intended software product. SDLC provides as series of steps to be followed to design and develop a software product efficiently. &lt;/p&gt;
+&lt;p&gt;These steps include:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+  &lt;p&gt;
+  &lt;p&gt;&lt;strong&gt;Communication&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;This is the step that a user (customer) approaches a software developer or software company requesting for a desired software product. The user submits is desired software product in a document explaining how he/she wants it to function etc.…&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;&lt;strong&gt;Requirement Gathering&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;From now onwards the software developer or software company takes over. A brainstorming process takes place. Each stakeholder of the product is interviewed to learn as much as possible about the requirements of the product. Questionnaires are handed out among others. The objective in this phase is to gather as much information as possible.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;&lt;strong&gt;Feasibility Study&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;After gathering required information from end users, the software developer(s) or software company analyzes whether a software can be made that address all required requirements. And if such a software can be made; are algorithms available? Is the technology feasible? How many developers are needed? Etc.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;&lt;strong&gt;System Analysis&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;At this stage, developers decide how they are to execute the project. They understand the product’s limitations, the system’s related potential problems identifying and addressing the impact of project on organization and people using software.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;&lt;strong&gt;Software Design&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;This step brings down gathered requirements and system analysis and design the software product.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;&lt;strong&gt;Coding&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;The implementation of software design starts in terms of writing program code in a suitable programming language.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;&lt;strong&gt;Testing&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Software testing is done while coding by the developers and thorough testing is conducted by testing experts at various levels of code such as module testing, program testing, product testing, in-house testing and testing the product at user’s end.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;&lt;strong&gt;Integration&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Software may need to be integrated with the libraries, databases and other program(s). This stage of SDLC is involved in the integration of software with outer world entities.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Waterfall Model&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Waterfall model is a sequential model. Software development is divided into separate phases and each phase is dependent on the success of the previous phase. The output of the one phase is the input of the other, so it is mandatory for the first phase to be completed before moving on to the next phase. The model assumes that everything produced in the previous step has no issues whatsoever because the model does not allow to go back and undo or redo our actions. In short, the development of one phase starts only when the previous phase is complete.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Iterative Model&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Iterative model allows software developers to receive quick feedback at every stage of the development process. To give a simple illustration on how the model works; let’s say we are developing a small feature on our product, once we finish that feature we immediately test it to analyze how it functions, then using results gathered the test we go back to designing the feature making improvements. From there we continue coding and maybe expanding the feature. The process repeats until a large-scale software product is produced. As you can see, this model leads the software development process in iterations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Similarities between waterfall model and iterative model:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In all fairness, there are few similarities between waterfall model and iterative model. One similarly that comes to mind is the ease at which both models can be implemented. Waterfall model being systematic by nature requiring that an output of the one phase is the input of the other - first phase to be completed before moving on to the next phase. Iterative model is cyclical – design, code, test and verify.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Differences between waterfall model and iterative model:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One of the most prominent differences between waterfall model and iterative model is the framework for software development process. As outlined above, waterfall model declares that the first step must be completed before moving onto the next step. Going further, it also assumes that everything produced in the previous step has no issues whatsoever and so it does not allow you to undo or redo actions. The waterfall model goes against the core structure of iterative model, in that unlike waterfall model, iterative model is designed to provide constant feedback by way of constant testing, evaluating, designing, verifying and repeating the whole process.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;One advantage for waterfall:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The waterfall model is simple and easy to understand and use because stages are clearly defined and done one at a time. As a result, it is easy to make a prediction regarding the size, cost, and timeline of the project, as well as knowing how the finished product will turn out at the end of development. This model is great for small projects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;One advantage for Iterative:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One key advantage for implementing iterative model for software development process is that it allows products to be built and improved step by step. As a result, defects are able to be detected in early stages due to quick reliable feedback. This model is perfect for technology start-ups.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;One disadvantage for waterfall model:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As we briefly touched on earlier in the post, waterfall model assumes that everything produced in the previous step has no issues whatsoever because the model does not allow to go back and undo or redo our actions. The development of one phase starts only when the previous phase is complete which is a major disadvantage. In software development, without adequate testing and feedback from end users, the likelihood of undetected defects in the software is high. It becomes very costly and difficult to go back and fix changes in large programs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;One disadvantage for iterative model:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Iterative model allows for quick feedback, which means projects are ever changing. For instance, the end of project may not be known until the project is fully compete. This uncertainty could mean project budget costs are unknown, on top of that, attention to risk analysis is higher compared to other models.&lt;/p&gt;
+	</description>
+    </item>
     <item>
       <title>Software Vulnerability - SQL Injection</title>
       <link>http://jbake.org/blog/2017/software-vulnerability-sql-injection.html</link>
@@ -308,7 +394,7 @@ public class JavaAppInsecureSQL implements ActionListener {
       <pubDate>Fri, 12 Feb 2016 00:00:00 -0500</pubDate>
       <guid isPermaLink="false">blog/2016/those-that-believe-are-those-that-achieve.html</guid>
       	<description>
-	&lt;p&gt;I’ll dub this week the carm before the storm. My two professors reached out to all of us (UMUC Students)&lt;br/&gt;reminding that our class starts next week Monday and that we should familiarize ourselves with online&lt;br/&gt;environment. Unlike last semester, this semester I decided to enroll in two classes at the same time in order&lt;br/&gt;to accelerate my education. Deep down I know I can take both courses, work at Gumax International part-time,&lt;br/&gt;volunteer with WeDev Club primarily on the weekends and manage to get good grades. I also know deep down that&lt;br/&gt;this period will take a lot out of me; this period will require an absolute attention to detail in terms of how&lt;br/&gt;I use my time during the day - how I allocate assignments to prioritize urgent work to best utilize time.&lt;br/&gt;I am envisioning many sleepless nights and long days that will require a high level of commitment. T&lt;br/&gt;his can be done, it has been done, people have battled through far more challenging roads that I really have&lt;br/&gt;no excuse whatsoever. What will keep me going will be my girl friend as she’ll also be battling her own battles,&lt;br/&gt;my younger brother who has a gigantic task of work studying at UPenn and the support and love from my mom and older&lt;br/&gt;brother. I can do it and I will do it!!!&lt;/p&gt;
+	&lt;p&gt;I’ll dub this week the carm before the storm. My two professors reached out to all of us (UMUC Students)&lt;br/&gt;reminding that our class starts next week Monday and that we should familiarize ourselves with online&lt;br/&gt;environment. Unlike last semester, this semester I decided to enroll in two classes at the same time in order&lt;br/&gt;to accelerate my education. Deep down I know I can take both courses, work at Gumax International part-time,&lt;br/&gt;volunteer with WeDev Club primarily on the weekends and manage to get good grades. I also know deep down that&lt;br/&gt;this period will take a lot out of me; this period will require an absolute attention to detail in terms of how&lt;br/&gt;I use my time during the day - how I allocate assignments to prioritize urgent work to best utilize time.&lt;br/&gt;I am envisioning many sleepless nights and long days that will require a high level of commitment. T&lt;br/&gt;his can be done, it has been done, people have battled through far more challenging roads that I really have&lt;br/&gt;no excuse whatsoever. What will keep me going will be my girl friend as she’ll also be battling her own battles,&lt;br/&gt;my younger brother who has a gigantic task of work studying at UPenn and the support and love from my mom and older&lt;br/&gt;brother. &lt;/p&gt;
 	</description>
     </item>
     <item>
