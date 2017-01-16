@@ -36,7 +36,7 @@ will be welcomingly busy. Another thing to look forward to is that Gumax Interna
 one of the vendors at the Super Bowl in San Francisco this coming February. I hope Guma picks me to
 attend such a massive event. Lastly, I’ll experience first hand how it’s like to work as a staff accountant
 during tax season. During this period my accountancy skills will truly be enhance expanding my brain
-farther.
+further.
 
 I cannot write a first blog without mentioning the people in my life that make my life happen and
 enjoyable. There is one thing that I’ve learned in this world no one no matter how successful someone is

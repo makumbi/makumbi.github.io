@@ -9,7 +9,7 @@ status=published
 The only fitting description for today would be roller-coaster of emotions. The day began in unexpected
 fashion. I woke up bright and early at around 830 just in time for the Chelsea verse Cristal Palace.
 Embarking on a new day my mind was empty free of any outside problems, the only objective at the
-time was to brash my teeth, walk downstairs to the sitting room and connect my laptop to the television
+time was to brush my teeth, walk downstairs to the sitting room and connect my laptop to the television
 and live stream the game. Feeling a bit hungry walked into the kitchen finding mom cleaning the dishes.
 Politely greeted her and acquired on if she had good sleep. To my surprise, she was in a terrible mood
 (as though the whole night she had been playing with random thoughts, juggling trying to make out all
@@ -23,7 +23,7 @@ lethargically quickly glanced at the list of vehicles and found that the majorit
 our budget so I dismissed the whole list entirely since in reality to me it didn’t matter. And since
 Woodbridge Auto Action had our deposit of $300, I thought it would be in our best interest to look at
 vehicles there so we do not lose our money. After doing a quick search I came across 4 vehicles in great
-condition and in our budget so I showed her pictures along with there basic specs (mileage, condition
+condition and in our budget so I showed her pictures along with their basic specs (mileage, condition
 etc.). To my surprise she loved the vehicles and even proposed that we head over to the dealership that
 evening since it was slow day and it would be nice get this car search over with before everyone gets
 busy.
@@ -41,7 +41,7 @@ As you can see I was extremely surprised to wake up in the morning to find mom i
 angry with me. Her reason was that I did not care about the list of vehicles she had sent me on the
 email. Yes, I felt sorry for not paying much attention to the list, but to my defense she sent me mixed
 signals. She shouldn’t have sent me cars priced above our budget. Including cars priced above the
-budget gave the notion that each car on the list was above the budge when in reality she had imbedded
+budget gave the notion that each car on the list was above the budge when in reality she had embedded
 cars below the budget that she really wanted me to look at. I understand that I should have taken the
 email seriously, but with the same token she should take some of the responsibility. For one, if you want
 me to look at two cars, don’t send me 5 other cars priced above the budget. Two, you placed a deposit

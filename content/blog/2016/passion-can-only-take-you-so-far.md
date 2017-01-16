@@ -14,7 +14,7 @@ time with us and see that there are other Ugandans in the US who have been throu
 He has a ridiculously long road ahead of him. He has so many dreams and aspirations. I’m afraid his expectations 
 are almost impossible given his circumstances today.
 
-The US is not an easy place to make it, the country is embedded with so many obstacles designed to slow anyone down. 
+The U.S. is not an easy place to make it, the country is embedded with so many obstacles designed to slow anyone down. 
 From house expenses, car expenses, school loans etc. these are merely the few among the many roadblocks in place that 
 he’ll learn to deal with. Obviously anyone with smarts, vision, dream, discipline, world class desire and work ethic 
 can make it anywhere including US. My main concern is that he is following his passion for music, which is admirable 

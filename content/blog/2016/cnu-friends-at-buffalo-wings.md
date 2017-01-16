@@ -1,4 +1,4 @@
-title=CNU friends at Buffalo Winds
+title=CNU friends at Buffalo Wings
 date=2016-01-17
 author=Alex Makumbi
 type=post
