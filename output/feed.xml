@@ -6,9 +6,52 @@
     <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sun, 22 Jan 2017 10:55:37 -0500</pubDate>
-    <lastBuildDate>Sun, 22 Jan 2017 10:55:37 -0500</lastBuildDate>
+    <pubDate>Sun, 29 Jan 2017 22:34:09 -0500</pubDate>
+    <lastBuildDate>Sun, 29 Jan 2017 22:34:09 -0500</lastBuildDate>
 
+    <item>
+      <title>Requirements Misuse and Abuse Cases</title>
+      <link>http://jbake.org/blog/2017/requirements-misuse-and-abuse-cases.html</link>
+      <pubDate>Sun, 29 Jan 2017 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2017/requirements-misuse-and-abuse-cases.html</guid>
+      	<description>
+	&lt;p&gt;We attempt to explain briefly what misuse/abuse cases are and why applying the concept in the development stage of software requirements results in a more robust secure product. Programmers generally create use case diagrams to demonstrate functions, flow and actions that the end-user and the application will perform, this ensures the program functions as it should and meets all the desired requirements. Misuse or abuse cases are similar to use cases, only that with misuse/abuse cases the developer has to place themselves in the shoes of an attacker. The programmer walks through functions, flow and actions of the program with the lenses of an attacker – how will the application or user handle the application in a way that is not intended. Misuse cases provide opportunities to investigate and validate security requirements. &lt;/p&gt;
+&lt;h3&gt;ATM abuse/misuse cases&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/img/ATM-System.png&quot; alt=&quot;Atm System&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The ATM System use cases diagram is displayed above. Use cases diagrams can also be viewed on the following links: &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.math-cs.gordon.edu/courses/cs211/ATMExample/UseCases.html&quot; title=&quot;ATM Use Cases&quot;&gt;ATM Example Use Case&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.math-cs.gordon.edu/courses/cs211/ATMExample/Interactions.html#Startup&quot; title=&quot;Startup Use Case&quot;&gt;ATM Operator Startup Use Case&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Start-up Use Case&lt;/h4&gt;
+&lt;p&gt;Before bank customers can begin using the ATM machine, an ATM system operator first has to Start Up the system following this sequence:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1.  Switch on operator panel
+2.  Get initial cash in the ATM 
+3.  Set initial cash into cash dispenser 
+4.  Then open connection to the bank
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Start-up Misuse/Abuse Case&lt;/h4&gt;
+&lt;p&gt;The first sequence, operator panel being switched on, does not appear to have contingencies in place that authenticates the operator. As a result, what will most likely happen is &lt;strong&gt;broken authentication&lt;/strong&gt; and &lt;strong&gt;session management&lt;/strong&gt; allowing a malicious user to compromise the entire system placing customer’s personal identifiable information (PII) in danger. To mitigate this threat, operator panel has to prompt user to enter username and password for user authentication. To mitigate &lt;strong&gt;brute force authentication&lt;/strong&gt;, &lt;strong&gt;guess valid user accounts&lt;/strong&gt; and &lt;strong&gt;dictionary attacks&lt;/strong&gt;, a generic error message is shown when authentication fails as well as locking the system after N failed login attempts. &lt;/p&gt;
+&lt;p&gt;Lastly, at the moment once the operator set initial cash into cash dispenser a connection to the bank is established. A vulnerability that can occur is &lt;strong&gt;missing function level access control&lt;/strong&gt;. This is when a request is not verified, enabling an attacker to forge requests in order to access functionality without proper authorization. To mitigate this vulnerability, operator should be required to enter pin before a connection is established with bank.&lt;/p&gt;
+&lt;h4&gt;Session Use Case&lt;/h4&gt;
+&lt;p&gt;After start-up sequence is successful customers are free to begin sessions. Sessions should follow the following sequence:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1.  Valid bank card inserted into ATM
+2.  Session is created. Reading card. If card is valid request to enter pin, if card is not valid terminate session.
+3.  User enters valid pin 
+4.  If pin valid, user can perform following transactions
+        a. Withdrawal
+        b. Deposit
+        c. Transfer
+        d. Inquiry
+5.  User cancels session (this can be done at any stage of session)
+6.  Card ejected
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Session Misuse/Abuse Case&lt;/h4&gt;
+&lt;p&gt;Once the ATM has detected the inserted bank card is valid, the customer is prompted to enter a four-digit pin. This user authentication is threatened by &lt;strong&gt;brute force authentication&lt;/strong&gt; and &lt;strong&gt;dictionary attacks&lt;/strong&gt;. To mitigate these threats, the ATM should lock account after N failed login attempts as well as validate the minimum length and complexity of pin. It is important that when user enters wrong pin a generic error message is shown to ensure that an attacker is not provided clues as to which user account is stored in the bank. All these implemented measures collectively in return mitigate &lt;strong&gt;broken authentication&lt;/strong&gt; and &lt;strong&gt;session management&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4&gt;Transaction Use Case&lt;/h4&gt;
+&lt;p&gt;After a successful pin validation, customer is presented with four transaction options: withdrawal, deposit, transfer, and inquiry. &lt;/p&gt;
+&lt;h4&gt;Transaction Misuse/Abuse Case&lt;/h4&gt;
+&lt;p&gt;In order to mitigate the threat of &lt;strong&gt;sensitive data exposer&lt;/strong&gt;, it is critical that the ATM displays the minimum number of information for each transaction. To give an example, let’s say a customer wants to withdrawal N amount from checking account. If N amount is more than amount in checking account, the ATM system should display a generic message ensuring PII is protected. To take it further, for each transaction, whether it is withdrawal, deposit, transfer, or inquiry, the customer needs to be prompted with a message asking for a confirmation to carry out an action. This will ensure that &lt;strong&gt;missing function level access control&lt;/strong&gt; is mitigated to some extent.&lt;/p&gt;
+	</description>
+    </item>
     <item>
       <title>Software Development Life Cycle (SDLC) Training</title>
       <link>http://jbake.org/blog/2017/sdlc-training.html</link>

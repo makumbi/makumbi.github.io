@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Requirements Misuse and Abuse Cases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This space is designed for software developers, technology enthusiast and open minded individuals unafraid to question everything">
+    <meta name="author" content="Alex Makumbi">
+    <meta name="keywords" content="Software Developer, Technology, Blog, Personal Development, Tutorials, 
+                Systems engineering, systems security engineering, assurance, trustworthiness, 
+                information security, information security policy, security architecture, security design, 
+                system life cycle, verification, validation, disposal, integration, implementation, stakeholder, 
+                security requirements, protection needs, resiliency, requirements analysis, risk management, 
+                risk assessment, risk treatment, security authorization, engineering trades, systems, 
+                system-of-systems, system element, system component, penetration testing, inspection, review, 
+                developmental engineering, field engineering, specifications">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/asciidoctor.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../../favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="https://makumbi.github.io/">makumbi
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../about.html">About</a></li>           
+            <li><a href="../../archive.html">Archive</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+	
+	<div class="page-header">
+		<h1>Requirements Misuse and Abuse Cases</h1>
+	</div>
+        
+        <p>Alex Makumbi</p>
+	<p><em>29 January 2017</em></p>
+
+	<p><p>We attempt to explain briefly what misuse/abuse cases are and why applying the concept in the development stage of software requirements results in a more robust secure product. Programmers generally create use case diagrams to demonstrate functions, flow and actions that the end-user and the application will perform, this ensures the program functions as it should and meets all the desired requirements. Misuse or abuse cases are similar to use cases, only that with misuse/abuse cases the developer has to place themselves in the shoes of an attacker. The programmer walks through functions, flow and actions of the program with the lenses of an attacker – how will the application or user handle the application in a way that is not intended. Misuse cases provide opportunities to investigate and validate security requirements. </p>
+<h3>ATM abuse/misuse cases</h3>
+<p><img src="/img/ATM-System.png" alt="Atm System" /></p>
+<p><strong>Note:</strong> The ATM System use cases diagram is displayed above. Use cases diagrams can also be viewed on the following links: </p>
+<p><a href="http://www.math-cs.gordon.edu/courses/cs211/ATMExample/UseCases.html" title="ATM Use Cases">ATM Example Use Case</a></p>
+<p><a href="http://www.math-cs.gordon.edu/courses/cs211/ATMExample/Interactions.html#Startup" title="Startup Use Case">ATM Operator Startup Use Case</a></p>
+<h4>Start-up Use Case</h4>
+<p>Before bank customers can begin using the ATM machine, an ATM system operator first has to Start Up the system following this sequence:</p>
+<pre><code>1.  Switch on operator panel
+2.  Get initial cash in the ATM 
+3.  Set initial cash into cash dispenser 
+4.  Then open connection to the bank
+</code></pre>
+<h4>Start-up Misuse/Abuse Case</h4>
+<p>The first sequence, operator panel being switched on, does not appear to have contingencies in place that authenticates the operator. As a result, what will most likely happen is <strong>broken authentication</strong> and <strong>session management</strong> allowing a malicious user to compromise the entire system placing customer’s personal identifiable information (PII) in danger. To mitigate this threat, operator panel has to prompt user to enter username and password for user authentication. To mitigate <strong>brute force authentication</strong>, <strong>guess valid user accounts</strong> and <strong>dictionary attacks</strong>, a generic error message is shown when authentication fails as well as locking the system after N failed login attempts. </p>
+<p>Lastly, at the moment once the operator set initial cash into cash dispenser a connection to the bank is established. A vulnerability that can occur is <strong>missing function level access control</strong>. This is when a request is not verified, enabling an attacker to forge requests in order to access functionality without proper authorization. To mitigate this vulnerability, operator should be required to enter pin before a connection is established with bank.</p>
+<h4>Session Use Case</h4>
+<p>After start-up sequence is successful customers are free to begin sessions. Sessions should follow the following sequence:</p>
+<pre><code>1.  Valid bank card inserted into ATM
+2.  Session is created. Reading card. If card is valid request to enter pin, if card is not valid terminate session.
+3.  User enters valid pin 
+4.  If pin valid, user can perform following transactions
+        a. Withdrawal
+        b. Deposit
+        c. Transfer
+        d. Inquiry
+5.  User cancels session (this can be done at any stage of session)
+6.  Card ejected
+</code></pre>
+<h4>Session Misuse/Abuse Case</h4>
+<p>Once the ATM has detected the inserted bank card is valid, the customer is prompted to enter a four-digit pin. This user authentication is threatened by <strong>brute force authentication</strong> and <strong>dictionary attacks</strong>. To mitigate these threats, the ATM should lock account after N failed login attempts as well as validate the minimum length and complexity of pin. It is important that when user enters wrong pin a generic error message is shown to ensure that an attacker is not provided clues as to which user account is stored in the bank. All these implemented measures collectively in return mitigate <strong>broken authentication</strong> and <strong>session management</strong>.</p>
+<h4>Transaction Use Case</h4>
+<p>After a successful pin validation, customer is presented with four transaction options: withdrawal, deposit, transfer, and inquiry. </p>
+<h4>Transaction Misuse/Abuse Case</h4>
+<p>In order to mitigate the threat of <strong>sensitive data exposer</strong>, it is critical that the ATM displays the minimum number of information for each transaction. To give an example, let’s say a customer wants to withdrawal N amount from checking account. If N amount is more than amount in checking account, the ATM system should display a generic message ensuring PII is protected. To take it further, for each transaction, whether it is withdrawal, deposit, transfer, or inquiry, the customer needs to be prompted with a message asking for a confirmation to carry out an action. This will ensure that <strong>missing function level access control</strong> is mitigated to some extent.</p></p>
+
+	<hr />
+	
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2017 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/prettify.js"></script>
+    
+  </body>
+</html>
+
