@@ -65,11 +65,26 @@
 		<h1>Articles</h1>
 	</div>
         
+  			<a href="blog/2017/personal-identifiable-information.html"><h1>Personal Identifiable Information (PII)</h1></a>
+  			<p>04 February 2017</p>
+  			<p><p><img src="/img/re-creditcardform.png" alt="Credit Card Entry Form" /></p>
+<p>Personal identifiable information or PII is practically any piece of information about someone maintained by an organization that can be used to distinguish or trace an individual’s identity. Information can include but not limited to name, social security number, date of birth as well as any other information that is linked or linkable to an individual.</p>
+<p>PII examples are listed below by no means exhaust possibilities of information that could be considered PII. This is only meant to highlight/provide a framework as of what PII information can encompass. Examples include financial transactions, medical history, criminal history, employment history, individual ‘s name, social security number, passport number, driver‘s license number, credit card number, vehicle registration among others.</p>
+<h4>Figure 1</h4>
+<p><img src="/img/re-newsupdate.png" alt="News Update form" /></p>
+<p>In figure 1, PII data that is being gathered from the form is title, first name, middle name and last name, address, email, and phone number. The purpose for the form is to allow people to subscribe for bi-weekly e-newsletter. This form asks people to enter (optionally) their addresses which is not necessary for a bi-weekly e-newsletter. If I worked for vendor and was tasked to improve security, I would first assess the impact level of storing and maintaining address information. I would conclude that the impact level of storing and maintaining address information is moderate since the expected loss of confidentiality, integrity, or availability could have serious adverse effect on individuals. As a result, I would lean on the side of cation by removing address from the form. </p>
+<h4>Figure 2</h4>
+<p><img src="/img/re-winmoney.png" alt="Win $10,000,000" /></p>
+<p>In figure 2, PII data that is being gathered from the form is name, address and data of birth in order to register to win $10,000,000 dollars. The fact that the form is asking for address is a slight over reach, and here is why, secure software development best practices show that a minimum number of information required to accomplish a particular task is needed - nothing more nothing less. If I worked for the vendor and was tasked to improve security, a possible way I would mitigate this is issue is by removing address from the form and instead wait until the participant has qualified to win the prize to solicit address information if it is needed. </p>
+<p><strong>Sources:</strong></p>
+<p>Bjork C. Russell. ATM Simulation. Retrieved from <a href="http://www.math-cs.gordon.edu/courses/cs211/ATMExample/Interactions.html#Startup">http://www.math-cs.gordon.edu/courses/cs211/ATMExample/Interactions.html#Startup</a></p>
+<p>Erika McCallister, Tim Grance and Karen Scarfone (April 2010). Guide to Protecting the Confidentiality of Personally Identifiable Information (PII). Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-122.</p>
+<p>“Requirements Analysis for Secure Software”. Software Assurance Pocket Guide Series, Development, Volume IV Version21, May 18, 2012.</p></p>
   			<a href="blog/2017/requirements-misuse-and-abuse-cases.html"><h1>Requirements Misuse and Abuse Cases</h1></a>
   			<p>29 January 2017</p>
   			<p><p>We attempt to explain briefly what misuse/abuse cases are and why applying the concept in the development stage of software requirements results in a more robust secure product. Programmers generally create use case diagrams to demonstrate functions, flow and actions that the end-user and the application will perform, this ensures the program functions as it should and meets all the desired requirements. Misuse or abuse cases are similar to use cases, only that with misuse/abuse cases the developer has to place themselves in the shoes of an attacker. The programmer walks through functions, flow and actions of the program with the lenses of an attacker – how will the application or user handle the application in a way that is not intended. Misuse cases provide opportunities to investigate and validate security requirements. </p>
 <h3>ATM abuse/misuse cases</h3>
-<p><img src="/img/ATM-System.png" alt="Atm System" /></p>
+<p><img src="/img/re-atm-system.png" alt="Atm System" /></p>
 <p><strong>Note:</strong> The ATM System use cases diagram is displayed above. Use cases diagrams can also be viewed on the following links: </p>
 <p><a href="http://www.math-cs.gordon.edu/courses/cs211/ATMExample/UseCases.html" title="ATM Use Cases">ATM Example Use Case</a></p>
 <p><a href="http://www.math-cs.gordon.edu/courses/cs211/ATMExample/Interactions.html#Startup" title="Startup Use Case">ATM Operator Startup Use Case</a></p>
@@ -101,7 +116,9 @@
 <h4>Transaction Use Case</h4>
 <p>After a successful pin validation, customer is presented with four transaction options: withdrawal, deposit, transfer, and inquiry. </p>
 <h4>Transaction Misuse/Abuse Case</h4>
-<p>In order to mitigate the threat of <strong>sensitive data exposer</strong>, it is critical that the ATM displays the minimum number of information for each transaction. To give an example, let’s say a customer wants to withdrawal N amount from checking account. If N amount is more than amount in checking account, the ATM system should display a generic message ensuring PII is protected. To take it further, for each transaction, whether it is withdrawal, deposit, transfer, or inquiry, the customer needs to be prompted with a message asking for a confirmation to carry out an action. This will ensure that <strong>missing function level access control</strong> is mitigated to some extent.</p></p>
+<p>In order to mitigate the threat of <strong>sensitive data exposer</strong>, it is critical that the ATM displays the minimum number of information for each transaction. To give an example, let’s say a customer wants to withdrawal N amount from checking account. If N amount is more than amount in checking account, the ATM system should display a generic message ensuring PII is protected. To take it further, for each transaction, whether it is withdrawal, deposit, transfer, or inquiry, the customer needs to be prompted with a message asking for a confirmation to carry out an action. This will ensure that <strong>missing function level access control</strong> is mitigated to some extent.</p>
+<p><strong>Sources:</strong></p>
+<p>OWASP Top Ten Project. Top 10 2013-Top 10. 2002-2013 OWASP Foundation. Retrieved from <a href="https://www.owasp.org/index.php/Top_10_2013-Top_10">https://www.owasp.org/index.php/Top_10_2013-Top_10</a></p></p>
   			<a href="blog/2017/sdlc-training.html"><h1>Software Development Life Cycle (SDLC) Training</h1></a>
   			<p>21 January 2017</p>
   			<p><p>This article allows me to demonstrate the importance of secure training in preparation of software development life-cycles. I will be discussing the importance of security training in preparation for secure software development, providing five reasons for the importance of security training prior to executing the SDL process.</p>

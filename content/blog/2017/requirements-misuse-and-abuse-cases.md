@@ -9,7 +9,7 @@ We attempt to explain briefly what misuse/abuse cases are and why applying the c
 
 ### ATM abuse/misuse cases
 
-![Atm System](/img/ATM-System.png)
+![Atm System](/img/re-atm-system.png)
 
 **Note:** The ATM System use cases diagram is displayed above. Use cases diagrams can also be viewed on the following links: 
 
@@ -59,6 +59,9 @@ After a successful pin validation, customer is presented with four transaction o
 
 In order to mitigate the threat of **sensitive data exposer**, it is critical that the ATM displays the minimum number of information for each transaction. To give an example, let’s say a customer wants to withdrawal N amount from checking account. If N amount is more than amount in checking account, the ATM system should display a generic message ensuring PII is protected. To take it further, for each transaction, whether it is withdrawal, deposit, transfer, or inquiry, the customer needs to be prompted with a message asking for a confirmation to carry out an action. This will ensure that **missing function level access control** is mitigated to some extent.
 
+**Sources:**
+
+OWASP Top Ten Project. Top 10 2013-Top 10. 2002-2013 OWASP Foundation. Retrieved from https://www.owasp.org/index.php/Top_10_2013-Top_10
 
 
 

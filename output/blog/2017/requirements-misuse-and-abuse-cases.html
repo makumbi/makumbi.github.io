@@ -70,7 +70,7 @@
 
 	<p><p>We attempt to explain briefly what misuse/abuse cases are and why applying the concept in the development stage of software requirements results in a more robust secure product. Programmers generally create use case diagrams to demonstrate functions, flow and actions that the end-user and the application will perform, this ensures the program functions as it should and meets all the desired requirements. Misuse or abuse cases are similar to use cases, only that with misuse/abuse cases the developer has to place themselves in the shoes of an attacker. The programmer walks through functions, flow and actions of the program with the lenses of an attacker – how will the application or user handle the application in a way that is not intended. Misuse cases provide opportunities to investigate and validate security requirements. </p>
 <h3>ATM abuse/misuse cases</h3>
-<p><img src="/img/ATM-System.png" alt="Atm System" /></p>
+<p><img src="/img/re-atm-system.png" alt="Atm System" /></p>
 <p><strong>Note:</strong> The ATM System use cases diagram is displayed above. Use cases diagrams can also be viewed on the following links: </p>
 <p><a href="http://www.math-cs.gordon.edu/courses/cs211/ATMExample/UseCases.html" title="ATM Use Cases">ATM Example Use Case</a></p>
 <p><a href="http://www.math-cs.gordon.edu/courses/cs211/ATMExample/Interactions.html#Startup" title="Startup Use Case">ATM Operator Startup Use Case</a></p>
@@ -102,7 +102,9 @@
 <h4>Transaction Use Case</h4>
 <p>After a successful pin validation, customer is presented with four transaction options: withdrawal, deposit, transfer, and inquiry. </p>
 <h4>Transaction Misuse/Abuse Case</h4>
-<p>In order to mitigate the threat of <strong>sensitive data exposer</strong>, it is critical that the ATM displays the minimum number of information for each transaction. To give an example, let’s say a customer wants to withdrawal N amount from checking account. If N amount is more than amount in checking account, the ATM system should display a generic message ensuring PII is protected. To take it further, for each transaction, whether it is withdrawal, deposit, transfer, or inquiry, the customer needs to be prompted with a message asking for a confirmation to carry out an action. This will ensure that <strong>missing function level access control</strong> is mitigated to some extent.</p></p>
+<p>In order to mitigate the threat of <strong>sensitive data exposer</strong>, it is critical that the ATM displays the minimum number of information for each transaction. To give an example, let’s say a customer wants to withdrawal N amount from checking account. If N amount is more than amount in checking account, the ATM system should display a generic message ensuring PII is protected. To take it further, for each transaction, whether it is withdrawal, deposit, transfer, or inquiry, the customer needs to be prompted with a message asking for a confirmation to carry out an action. This will ensure that <strong>missing function level access control</strong> is mitigated to some extent.</p>
+<p><strong>Sources:</strong></p>
+<p>OWASP Top Ten Project. Top 10 2013-Top 10. 2002-2013 OWASP Foundation. Retrieved from <a href="https://www.owasp.org/index.php/Top_10_2013-Top_10">https://www.owasp.org/index.php/Top_10_2013-Top_10</a></p></p>
 
 	<hr />
 	
