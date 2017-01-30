@@ -9,7 +9,7 @@ We attempt to explain briefly what misuse/abuse cases are and why applying the c
 
 ### ATM abuse/misuse cases
 
-![Atm System](img/re-atm-system.png)
+![Atm System](/img/re-atm-system.png)
 
 **Note:** The ATM System use cases diagram is displayed above. Use cases diagrams can also be viewed on the following links: 
 
