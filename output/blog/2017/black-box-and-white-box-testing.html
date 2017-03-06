@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Sensitive Data Exposer: Black Box and White Box Test Cases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This space is designed for software developers, technology enthusiast and open minded individuals unafraid to question everything">
+    <meta name="author" content="Alex Makumbi">
+    <meta name="keywords" content="Software Developer, Technology, Blog, Personal Development, Tutorials, 
+                Systems engineering, systems security engineering, assurance, trustworthiness, 
+                information security, information security policy, security architecture, security design, 
+                system life cycle, verification, validation, disposal, integration, implementation, stakeholder, 
+                security requirements, protection needs, resiliency, requirements analysis, risk management, 
+                risk assessment, risk treatment, security authorization, engineering trades, systems, 
+                system-of-systems, system element, system component, penetration testing, inspection, review, 
+                developmental engineering, field engineering, specifications">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/asciidoctor.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../../favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="https://makumbi.github.io/">makumbi
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../about.html">About</a></li>           
+            <li><a href="../../archive.html">Archive</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+	
+	<div class="page-header">
+		<h1>Sensitive Data Exposer: Black Box and White Box Test Cases</h1>
+	</div>
+        
+        <p>Alex Makumbi</p>
+	<p><em>26 February 2017</em></p>
+
+	<p><p><strong>Note:</strong> ATM Use Cases diagram can be viewed on the following link <a href="http://www.math-cs.gordon.edu/courses/cs211/ATMExample/UseCases.html" title="ATM Use Cases">ATM Example Use Case</a></p>
+<p>The ATM is designed in a way that once a user has successfully inserted a valid bank card and enters a valid four-digit pin, they are presented with four transaction options: withdrawal, deposit, transfer, and account inquiry. While the user navigates the ATM system, one threat that could pose as a danger to personal identifiable information (PII) is sensitive data exposer. This article is going to focus on the transaction feature/function of the ATM design because this is where the vulnerability is likely to occur.</p>
+<h4>Is threat mitigated by the current design?</h4>
+<p>It is difficult to determine whether the current design of ATM system mitigates sensitive data exposure because it does not explicitly outline how it addresses or if it recognizes the threat. The assumption will be that the current design does not recognize the sensitive data exposure as a threat. Before we come to a conclusion, we will conduct a black box test to understand how the design reacts to various tests. A high-level design of the ATM system will be used as the basis for tests. The high-level design recognized the threat sensitive data exposure had on PII and took steps to mitigate the vulnerability. These steps included limiting the amount of information displayed on the screen and using generic messages when a transaction is not successful.</p>
+<h3>User withdrawals</h3>
+<p>Each time a user wants to withdrawal N amount, the bank system internally determines whether they can or cannot withdrawal N amount by checking bank account records of the user. A message output depends on whether the user can or cannot withdrawal. If the user can withdrawal N amount, they are prompted to confirm that N amount is to be withdrawn. On the other hand, if the user does not have sufficient funds and cannot withdrawal, they are notified that no withdrawal can be made at that time.</p>
+<h3>User inquiring</h3>
+<p>When a user requests an inquiry to their account, the bank internally checks the user’s account summary of checking account and savings account. The user is then provided the option of printing out summary on a receipt.</p>
+<h3>User transferring</h3>
+<p>Each time a user wants to transfer N amount, internally the bank system determines whether they can or cannot transfer N amount by checking bank account records of the user. A message output depends on whether the user can or cannot transfer. If the user can transfer N amount, they are prompted to confirm that N amount is to be transferred. On the other hand, if the user does not have sufficient funds in the given account, they are notified that transfer cannot be made at that time.</p>
+<h3>User depositing</h3>
+<p>Once the user indicates that they want to deposit N amount in account, the ATM system prompts the user to specify which account they want to deposit the amount. The user cannot deposit more than $25,000 in either account. The bank internally updates its records once it has determined that indeed the amount deposited is correct.</p>
+<h2>Test steps</h2>
+<ol>
+  <li>Total amount in checking account.</li>
+  <li>Total amount in saving account.</li>
+  <li>Transfer N amount from checking account to saving account.</li>
+  <li>Transfer N amount from saving account to checking account.</li>
+  <li>Deposit N amount in checking account.</li>
+  <li>Deposit N amount in savings account.</li>
+  <li>Withdrawal N &gt; $1,000 from checking account.</li>
+  <li>Withdrawal N &lt; $10 from savings account.</li>
+</ol>
+<h3>Test tools that would employ to perform testing</h3>
+<p>The tools that I would employ to test sensitive data exposure vulnerability on ATM system would be Katalon Studio and Hp Fortify on Demand. Katalon Studio has the capability of conducting automated tests as well as manual test with the UI layer of an application.</p>
+<p>Hp Fortify on Demand provides security as a service and manages security risk. Fortify on demand also has the capabilities of conducting automated tests with a full audit of results. Fortify differs from Katalon Studio because it focuses more on security as a posed to the overall functionality of an application (Fortify on Demand, 2017).</p></p>
+
+	<hr />
+	
+		</div>
+		<div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2017 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.5.0</a></p>
+      </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/prettify.js"></script>
+    
+  </body>
+</html>
+

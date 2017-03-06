@@ -6,9 +6,188 @@
     <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sun, 5 Mar 2017 22:07:48 -0500</pubDate>
-    <lastBuildDate>Sun, 5 Mar 2017 22:07:48 -0500</lastBuildDate>
+    <pubDate>Sun, 5 Mar 2017 23:26:01 -0500</pubDate>
+    <lastBuildDate>Sun, 5 Mar 2017 23:26:01 -0500</lastBuildDate>
 
+    <item>
+      <title>Incident Management and Patch Management</title>
+      <link>http://jbake.org/blog/2017/incident-management-patch-management.html</link>
+      <pubDate>Wed, 8 Mar 2017 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2017/incident-management-patch-management.html</guid>
+      	<description>
+	&lt;p&gt;Building a secure software product by going through the Software Development Life-Cycle (SDLC) processes (requirements, design, develop, test and deploy) following best practices, one can assume that the product can be built robust enough needing minimum attention once it is in service. As we’ve learned in this course, that reality does not exist for public actively used software products; even for privately used software products for that matter. Steps have to be taken early in the SDLC to address worse case scenarios such beaches into the product, vulnerabilities found in code etc. &lt;/p&gt;
+&lt;p&gt;Incident management and patch management plans developed early in the SDLC of a software product aim to establish controls to ensure damage to the product is mitigated or is restored as quickly as possible. Incident management outlines policy guidelines that an incident team must follow which can include for example the duration a software product can be offline (depending on the tolerance level of the organization), how incidents are archived, a team of incident responders is identified, trained and provided necessary tools etc. These guidelines are well documented early in the SDLC before the product goes live.&lt;/p&gt;
+&lt;p&gt;Patch management carefully outlines policy guidelines on how to approach software patches keeping in mind the time it would take to make patches, how much it would cost to make patches and time and cost of testing. Policies clearly communicate to software engineers what type of patches to prioritize and which tools to use in addressing various patches.&lt;/p&gt;
+&lt;p&gt;Incident and Patch management are necessary activities that ensure that once the software product is deployed, controls are in place to identify, protect, detect, respond and recover a software product from a breach or vulnerability. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;National Institute of Standards and Technology. (2014). Framework for Improving Critical Infrastructure Cybersecurity. Retrieved from &lt;a href=&quot;https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf&quot;&gt;https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf&lt;/a&gt;&lt;/p&gt;
+	</description>
+    </item>
+    <item>
+      <title>Incident Management Response</title>
+      <link>http://jbake.org/blog/2017/incident-management-response.html</link>
+      <pubDate>Sat, 4 Mar 2017 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2017/incident-management-response.html</guid>
+      	<description>
+	&lt;h3&gt;Scenario of a breach&lt;/h3&gt;
+&lt;p&gt;One day, large sums of money were withdrawn from several networked ATM systems by the same User ID.&lt;/p&gt;
+&lt;h3&gt;Incident Management&lt;/h3&gt;
+&lt;p&gt;A large sums of money was withdrawn from several networked ATM systems by the same User ID. Given that the core existence of a bank is to manage and keep customers money safe and secure, we have to identify this incident as a major incident (high urgency) because of its impact to customers and integrity of the bank’s reputation in community. There is a lot of unknowns in regards to the extent of the breach. We need to know how the attacker managed to exploit our current defenses, does the attacker have access to private and confidential information of a significant number of individuals, how quickly can we restore the ATM system among other questions to be asked.&lt;/p&gt;
+&lt;p&gt;Once the breach has been made aware to the incident manager, he summons the 1st level support to conduct an immediate incident resolution. Their objective is to use any means possible to stop the damage and restore the ATM system back to its original state. In our case, they would have to patch up the vulnerability that allowed the attacker to exploit the system causing the breach. Since this breach is of high urgency the time allocated to resolve the breach is 1 hour, and if that time exceeds the incident has to be transferred to team within 2nd level support. If hypothetically my role was incident manager, I would immediately bring the issue to 2nd level support to mitigate the time it takes to resolve the security breach instead of summoning the 1st level support because of the urgency of the breach. &lt;/p&gt;
+&lt;h3&gt;Incident Response Processes&lt;/h3&gt;
+&lt;p&gt;The 1st level and 2nd level management of incident response requires response teams to recover and gather as much information about the breach to be recorded and stored for archiving. A collection of incident investigations is archived for future reference to ensure that swift action is taken on recurring breaches or service interruptions in the future. It is important to also note that when an incident is logged, the duration and how the incident was resolved is also recorded. Incident logging is also helpful to gain an insight as to the kinds of breaches or service interruptions the organization experiences overtime (ITIL Incident Management, 2016). &lt;/p&gt;
+&lt;p&gt;As mentioned before, if hypothetically I was an incident manager I would have immediately summoned 2nd level support team. The 2nd level support team would quickly look at archived incident reports to determine if a previous incident or detected vulnerability exploit on the ATM system is similar to our current breach. If the detected vulnerability was not previously archived, the ATM system networked breach would be a “Zero Day Attack”. These attacks are difficult to get to a root cause because they are new to the system. Specialist support groups or third party experts have to be involved to see that no farther withdrawal of money is made from the ATM system.&lt;/p&gt;
+&lt;p&gt;When an accurate analysis of the breach is gathered, bank users and staff members would be made aware of the occurring or occurred incident in an effort to get users vigilant and keep an eye out for suspicious activities or to anticipate any service interruptions. The security incident notification message to ATM system users will have instructions with step by step explanations on actions they can take to protect themselves.&lt;/p&gt;
+&lt;h4&gt;Instructions:&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Do not use ATM system for 48hrs until further notice&lt;/li&gt;
+  &lt;li&gt;Change ATM pin number&lt;/li&gt;
+  &lt;li&gt;Call customer service on suspicious account transactions&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Incident follow-up and additional processes&lt;/h3&gt;
+&lt;p&gt;During the incident management processes, detailed data about the breach was thoroughly documented to be archived. Details such as how the attacker managed to break the ATM system defenses, how much damage was caused to the bank and ATM users, how long it took to restore the ATM system, which response teams addressed the breach, how much money did it cost the bank, what tools where used to mitigate further withdrawal of money. Before the case is fully closed, a final review is conducted to ensure the incident is actually resolved and that sufficient detail supporting the incident is of quality. &lt;/p&gt;
+&lt;p&gt;Once the case has gone through quality control and properly archived, an ongoing monitoring process of the system for prior incidents including the ATM system networked breach has to be evaluated to continue implementing counter-measures that address likely weaknesses to the system.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sources&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;ITIL Incident Management. (2016). Incident Management. Retrieved from &lt;a href=&quot;http://wiki.en.it-processmaps.com/index.php/Incident_Management#Incident-Record&quot;&gt;http://wiki.en.it-processmaps.com/index.php/Incident_Management#Incident-Record&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;National Institute of Standards and Technology. (2014). Framework for Improving Critical Infrastructure Cybersecurity. Retrieved from &lt;a href=&quot;https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf&quot;&gt;https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf&lt;/a&gt;&lt;/p&gt;
+	</description>
+    </item>
+    <item>
+      <title>Sensitive Data Exposer: Black Box and White Box Test Cases</title>
+      <link>http://jbake.org/blog/2017/black-box-and-white-box-testing.html</link>
+      <pubDate>Sun, 26 Feb 2017 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2017/black-box-and-white-box-testing.html</guid>
+      	<description>
+	&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; ATM Use Cases diagram can be viewed on the following link &lt;a href=&quot;http://www.math-cs.gordon.edu/courses/cs211/ATMExample/UseCases.html&quot; title=&quot;ATM Use Cases&quot;&gt;ATM Example Use Case&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The ATM is designed in a way that once a user has successfully inserted a valid bank card and enters a valid four-digit pin, they are presented with four transaction options: withdrawal, deposit, transfer, and account inquiry. While the user navigates the ATM system, one threat that could pose as a danger to personal identifiable information (PII) is sensitive data exposer. This article is going to focus on the transaction feature/function of the ATM design because this is where the vulnerability is likely to occur.&lt;/p&gt;
+&lt;h4&gt;Is threat mitigated by the current design?&lt;/h4&gt;
+&lt;p&gt;It is difficult to determine whether the current design of ATM system mitigates sensitive data exposure because it does not explicitly outline how it addresses or if it recognizes the threat. The assumption will be that the current design does not recognize the sensitive data exposure as a threat. Before we come to a conclusion, we will conduct a black box test to understand how the design reacts to various tests. A high-level design of the ATM system will be used as the basis for tests. The high-level design recognized the threat sensitive data exposure had on PII and took steps to mitigate the vulnerability. These steps included limiting the amount of information displayed on the screen and using generic messages when a transaction is not successful.&lt;/p&gt;
+&lt;h3&gt;User withdrawals&lt;/h3&gt;
+&lt;p&gt;Each time a user wants to withdrawal N amount, the bank system internally determines whether they can or cannot withdrawal N amount by checking bank account records of the user. A message output depends on whether the user can or cannot withdrawal. If the user can withdrawal N amount, they are prompted to confirm that N amount is to be withdrawn. On the other hand, if the user does not have sufficient funds and cannot withdrawal, they are notified that no withdrawal can be made at that time.&lt;/p&gt;
+&lt;h3&gt;User inquiring&lt;/h3&gt;
+&lt;p&gt;When a user requests an inquiry to their account, the bank internally checks the user’s account summary of checking account and savings account. The user is then provided the option of printing out summary on a receipt.&lt;/p&gt;
+&lt;h3&gt;User transferring&lt;/h3&gt;
+&lt;p&gt;Each time a user wants to transfer N amount, internally the bank system determines whether they can or cannot transfer N amount by checking bank account records of the user. A message output depends on whether the user can or cannot transfer. If the user can transfer N amount, they are prompted to confirm that N amount is to be transferred. On the other hand, if the user does not have sufficient funds in the given account, they are notified that transfer cannot be made at that time.&lt;/p&gt;
+&lt;h3&gt;User depositing&lt;/h3&gt;
+&lt;p&gt;Once the user indicates that they want to deposit N amount in account, the ATM system prompts the user to specify which account they want to deposit the amount. The user cannot deposit more than $25,000 in either account. The bank internally updates its records once it has determined that indeed the amount deposited is correct.&lt;/p&gt;
+&lt;h2&gt;Test steps&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Total amount in checking account.&lt;/li&gt;
+  &lt;li&gt;Total amount in saving account.&lt;/li&gt;
+  &lt;li&gt;Transfer N amount from checking account to saving account.&lt;/li&gt;
+  &lt;li&gt;Transfer N amount from saving account to checking account.&lt;/li&gt;
+  &lt;li&gt;Deposit N amount in checking account.&lt;/li&gt;
+  &lt;li&gt;Deposit N amount in savings account.&lt;/li&gt;
+  &lt;li&gt;Withdrawal N &amp;gt; $1,000 from checking account.&lt;/li&gt;
+  &lt;li&gt;Withdrawal N &amp;lt; $10 from savings account.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Test tools that would employ to perform testing&lt;/h3&gt;
+&lt;p&gt;The tools that I would employ to test sensitive data exposure vulnerability on ATM system would be Katalon Studio and Hp Fortify on Demand. Katalon Studio has the capability of conducting automated tests as well as manual test with the UI layer of an application.&lt;/p&gt;
+&lt;p&gt;Hp Fortify on Demand provides security as a service and manages security risk. Fortify on demand also has the capabilities of conducting automated tests with a full audit of results. Fortify differs from Katalon Studio because it focuses more on security as a posed to the overall functionality of an application (Fortify on Demand, 2017).&lt;/p&gt;
+	</description>
+    </item>
+    <item>
+      <title>Tools for Enforcing Secure Code</title>
+      <link>http://jbake.org/blog/2017/tools-to-enforce-secure-code.html</link>
+      <pubDate>Sun, 19 Feb 2017 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2017/tools-to-enforce-secure-code.html</guid>
+      	<description>
+	&lt;p&gt;A simple Google search for an open source static code analysis tool displays a variety of tools for secure code analysis. Analyzing the various tools in the results menu, you quickly realize two things; one, that there are many open source code analysis tools, and two, the range at which code analysis tools differ from one another. Generally speaking, tools encountered during the survey some were multi-language (ex: VisualCodeGrepper, Zed Attack Proxy, PMD, and YASCA) others were language specific, for instance, only focusing on JAVA (ex: OWASP LAPSE+, FindBugs), PHP (ex: RIPS, and DevBug), or C++ (ex: Flawfinder, and CPPCheck). Another quick distinction between tools is the capabilities they had to conduct analysis. Analysis tools could either do both static and dynamic code analysis, others could only perform either static or dynamic code analysis. Furthermore, within language specific code analysis tools, tools differed further in the types of vulnerabilities they detected.&lt;/p&gt;
+&lt;p&gt;Recognizing the distinction and differences between open source secure code analysis tools is important and should not be overlook. A series of discussions among programmers and security team needs to take place in deciding a particular code analysis tool(s). Questions to be asked are; Does the tool support language(s) on the project? What type of vulnerability and code issues to they need to look for in code? What’s the rate of false positives associated with the tool(s)? among other targeted questions.&lt;/p&gt;
+&lt;h4&gt;Selected open source tool&lt;/h4&gt;
+&lt;p&gt;FindBugs code analysis tool will be used to demonstrate my understanding and purpose of open source code analysis tools. FindBugs is an open source code analyzer that focuses on detecting possible bugs in Java programs. Since the tool is written in Java, it is a stand-alone GUI application so it can be used on many platforms. Finally, FindBugs records potential errors in four ranks; scariest, scary, troubling and of concern (Markus, 2012).&lt;/p&gt;
+&lt;h4&gt;Summary tool strengths and weaknesses&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Strengths&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Personally I prefer open source code analysis tools that focus only on a particular language because it allows the tool designer(s) to not only worry about detecting low hanging fruits, but get deeper into higher level coding vulnerabilities. Findbugs has a very low number of false positives. So the tool is generally reliable and finds valid bugs. The option of turning off scanning for certain types of bugs to be a useful feature which would increase the convenience of using FindBugs in different situations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Weakness&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;FindBugs is not very customizable. For instance, Findbugs has its own defined coding style (naming conventions of methods etc.). There should be a way to customize the coding style so that it can analyze the code against a custom coding style specified by the user. It will not always be the case that the user will be coding in the style defined in FindBugs (Sandcastle, 2009).&lt;/p&gt;
+&lt;h3&gt;Source code for analysis&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;   private static void createConnection()
+    {
+        try
+        {
+            Class.forName(&amp;quot;org.apache.derby.jdbc.ClientDriver&amp;quot;).newInstance();
+            //Get a connection
+            conn = DriverManager.getConnection(dbURL); 
+            
+        }
+        catch (ClassNotFoundException | InstantiationException | IllegalAccessException | SQLException except)
+        {
+            except.printStackTrace();
+        }
+        
+    }
+    
+    private static void insertUserInfor(String userName, String userPass)
+    {
+        try
+        {
+            createConnection();
+            stmt = conn.createStatement();
+            stmt.execute(&amp;quot;insert into &amp;quot; + tableName + &amp;quot; values (&amp;#39;&amp;quot; +
+                    userName + &amp;quot;&amp;#39;, &amp;#39;&amp;quot; + userPass + &amp;quot;&amp;#39;)&amp;quot;);
+            
+            stmt.close();
+        }
+        catch (SQLException sqlExcept)
+        {
+            sqlExcept.printStackTrace();
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Results after applying FindBugs to the code&lt;/h4&gt;
+&lt;p&gt;Netbeans makes it easy to apply Findbugs on Java code. The tool is deployed as follows; simply navigate to the navigation bar and click on sources, then click on inspect and select Findbugs. On the Java code that was inspected, Findbugs quickly detected troubling bugs within the code and displayed them on the results console. In random order, the tool grouped bugs in two categories; security and bad practice. On the left hand side of the results console, Netbeans has a feature that allows a user to rank bugs, so in my case, after clicking on the feature security category is placed at the top and bad practice category is placed below.&lt;/p&gt;
+&lt;p&gt;Under security category, Findbugs detected that the Java code is vulnerable to SQL injection. The tool was able to trace through the folder tree locating the precise method the vulnerability was occurring in the code. Findbugs gives a recommendation to mitigate the bug: “Consider using a prepared statement instead. It is more efficient and less vulnerable to SQL injection attacks”.&lt;/p&gt;
+&lt;p&gt;Under bad practice category, Findbugs detected one vulnerability at two locations in the code. The vulnerability detected was improper closing of a database resource. Findbugs’ recommendation to mitigate the bug: “Failure to close database resources on all paths out of a method may result in poor performance, and could cause the application to have problems communicating with the database”.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CyberSecology. “The OWASP Zed Attack Proxy (ZAP) Scanner” CyberSecology-Web Scanner Reviews. Retrieved from &lt;a href=&quot;http://cybersecology.com/the-owasp-zed-attack-proxy-zap-scanner/&quot;&gt;http://cybersecology.com/the-owasp-zed-attack-proxy-zap-scanner/&lt;/a&gt; (On 17 February 2017).&lt;/p&gt;
+&lt;p&gt;InfoSec Institute. (2013). “Which Weapon Should I Choose for Web Penetration Testing? 3.0” Retrieved from &lt;a href=&quot;http://resources.infosecinstitute.com/which-weapon-should-i-choose-for-web-penetration-testing-3-0/#gref&quot;&gt;http://resources.infosecinstitute.com/which-weapon-should-i-choose-for-web-penetration-testing-3-0/#gref&lt;/a&gt; (On 17 February 2017).&lt;/p&gt;
+&lt;p&gt;Markus, Sprunck. (2012).&quot;Findbugs – Static Code Analysis of Java&quot; Methods and Tools. Retrieved from &lt;a href=&quot;http://www.methodsandtools.com/tools/findbugs.php&quot;&gt;http://www.methodsandtools.com/tools/findbugs.php&lt;/a&gt; (On 18 February 2017).&lt;/p&gt;
+&lt;p&gt;Sandcastle. (2009). “An Evaluation of FindBugs” Analysis of Software Artifacts. Retrieved from &lt;a href=&quot;http://www.cs.cmu.edu/~aldrich/courses/654/tools/Sandcastle-FindBugs-2009.pdf&quot;&gt;http://www.cs.cmu.edu/~aldrich/courses/654/tools/Sandcastle-FindBugs-2009.pdf&lt;/a&gt; (On 18 February 2017).&lt;/p&gt;
+	</description>
+    </item>
+    <item>
+      <title>Threat Modeling</title>
+      <link>http://jbake.org/blog/2017/threat-modeling.html</link>
+      <pubDate>Sun, 12 Feb 2017 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2017/threat-modeling.html</guid>
+      	<description>
+	&lt;p&gt;Building on the previous assignment where we discussed misuse/abuse case using ATM machine as an example, this week we discuss the threat modeling process. Threat modeling ranks threats during software design identifying which assets or components are most critical to the business and ranks them according to damage a threat would cause to the business. This ranking helps teams prioritize energy and resources on high ranking assets during a breach in an effort to mitigate damage. As a result, security code review of components whose threat modeling has ranked with high risk threat is prioritized.&lt;/p&gt;
+&lt;p&gt;Threat modeling process encompasses three high level steps which are decompose the application, determine and rank threats, and determine countermeasures and mitigation. This paper is going to delve deep into each step to get a better understanding how threat modeling is implemented.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Decompose the Application&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;As the first step in threat modeling process, attention is focused on gaining an understanding of the application and how it interacts with external entities. What does this mean? It means identifying entry points an attacker can use to exploited the application, identify trust levels as it pertains to access levels among others.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Determine and rank threats&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;It is not hard to guess what this step is all about. Threats are determined and ranked using a threat categorization methodology. OWASP outlines a threat categorization known as STRIDE, which we will be using to rank threats to the ATM machine. STRIDE stands for – Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, and Elevation of privilege.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Determine countermeasures and mitigation&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Once a risk ranking is assigned to the threats, it is possible to sort threats from the highest to the lowest risk, and prioritize the mitigation effort, such as by responding to such threats by applying the identified countermeasures.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;External Dependences&lt;/h4&gt;
+&lt;p&gt;We also outline external dependences. External dependences are items external to the code of the application that may pose a threat to the application (OWASP, 2015). For our ATM machine, an external dependency would be the machine’s connection to the bank both internally and physically.&lt;/p&gt;
+&lt;h4&gt;Entry Points&lt;/h4&gt;
+&lt;p&gt;Entry points are essentially an application’s attack surface. Meaning that we define the interfaces which potential attackers can interact with the application or supply it with data. For our ATM machine, the entry points are the pin pad, credit card reader, bank and operator.&lt;/p&gt;
+&lt;h4&gt;Assets&lt;/h4&gt;
+&lt;p&gt;Threat models are created during the design of an application to outline threat targets. Threat targets are things that attackers are interested in, this can be items/areas of interest. Assets are the reason threats will exists. Assets can be both physical and abstract. For our ATM machine, an abstract asset might be degrading people’s trust in using ATM machines. A physical asset might be a list of account records and personal information, as well as the actual stealing of money.&lt;/p&gt;
+&lt;h4&gt;Ranking of Threats&lt;/h4&gt;
+&lt;p&gt;Threats are ranked according to potential risk factors. Risk factors are determined by the impact they pose to a business and component and ranked in a list of high, medium, low risk. DREAD is a Microsoft threat-risk ranking model that we will use to rank threat factors. The risk factorization of the model allows the use of values influencing factors of a threat. Questions that threat-risk ranking model aims to answer are:&lt;br/&gt;- For Damage: How big would the damage be if the attack succeeded?&lt;br/&gt;- For Reproducibility: How easy is it to reproduce an attack to work?&lt;br/&gt;- For Exploitability: How much time, effort, and expertise is needed to exploit the threat?&lt;br/&gt;- For Affected Users: If a threat were exploited, what percentage of users would be affected?&lt;br/&gt;- For Discoverability: How easy is it for an attacker to discover this threat?&lt;/p&gt;
+&lt;h3&gt;Mitigation for threats.&lt;/h3&gt;
+&lt;p&gt;Once the ATM has detected the inserted bank card is valid, the customer is prompted to enter a four-digit pin. This user authentication is threatened by &lt;strong&gt;brute force authentication&lt;/strong&gt; and &lt;strong&gt;dictionary attacks&lt;/strong&gt;. To mitigate these threats, the ATM should lock account after N failed login attempts as well as validate the minimum length and complexity of pin. It is important that when user enters wrong pin a generic error message is shown to ensure that an attacker is not provided clues as to which user account is stored in the bank. All these implemented measures collectively in return mitigate &lt;strong&gt;broken authentication&lt;/strong&gt; and &lt;strong&gt;session management&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In order to mitigate the threat of &lt;strong&gt;sensitive data exposure&lt;/strong&gt;, it is critical that the ATM displays the minimum number of information for each transaction. To give an example, let’s say a customer wants to withdrawal N amount from checking account. If N amount is more than amount in checking account, the ATM system should display a generic message ensuring PII is protected. To take it further, for each transaction, whether it is withdrawal, deposit, transfer, or inquiry, the customer needs to be prompted with a message asking for a confirmation to carry out an action.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sources&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bjork C. Russell. ATM Simulation. Retrieved from &lt;a href=&quot;http://www.math-cs.gordon.edu/courses/cs211/ATMExample/UseCases.html&quot;&gt;http://www.math-cs.gordon.edu/courses/cs211/ATMExample/UseCases.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;OWASP. (2015). Application Threat Modeling. Creative Commons 3.0 License. Retrieved from &lt;a href=&quot;https://www.owasp.org/index.php/Application_Threat_Modeling#STRIDE&quot;&gt;https://www.owasp.org/index.php/Application_Threat_Modeling#STRIDE&lt;/a&gt;&lt;/p&gt;
+	</description>
+    </item>
     <item>
       <title>Secure Software Design</title>
       <link>http://jbake.org/blog/2017/secure-software-design.html</link>

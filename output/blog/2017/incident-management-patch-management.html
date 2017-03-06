@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Alex Makumbi</title>
+    <title>Incident Management and Patch Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This space is designed for software developers, technology enthusiast and open minded individuals unafraid to question everything">
     <meta name="author" content="Alex Makumbi">
@@ -17,14 +17,14 @@
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/asciidoctor.css" rel="stylesheet">
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/prettify.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/asciidoctor.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/prettify.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
+      <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -32,11 +32,11 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="../../favicon.ico">
   </head>
   <body onload="prettyPrint()">
     <div id="wrap">
-
+	
 	<!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -52,9 +52,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>           
-            <li><a href="archive.html">Archive</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../about.html">About</a></li>           
+            <li><a href="../../archive.html">Archive</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -62,51 +62,20 @@
     <div class="container">
 	
 	<div class="page-header">
-		<h1>Blog Archive</h1>
+		<h1>Incident Management and Patch Management</h1>
 	</div>
-	
-	<!--<ul>-->
-			<h4>March 2017</h4>
-			<ul>
-		
-		<li>08 - <a href="blog/2017/incident-management-patch-management.html">Incident Management and Patch Management</a></li>
-		
-		<li>04 - <a href="blog/2017/incident-management-response.html">Incident Management Response</a></li>
-				</ul>
-				<h4>February 2017</h4>
-				<ul>
-		
-		<li>26 - <a href="blog/2017/black-box-and-white-box-testing.html">Sensitive Data Exposer: Black Box and White Box Test Cases</a></li>
-		
-		<li>19 - <a href="blog/2017/tools-to-enforce-secure-code.html">Tools for Enforcing Secure Code</a></li>
-		
-		<li>12 - <a href="blog/2017/threat-modeling.html">Threat Modeling</a></li>
-		
-		<li>05 - <a href="blog/2017/secure-software-design.html">Secure Software Design</a></li>
-		
-		<li>04 - <a href="blog/2017/personal-identifiable-information.html">Personal Identifiable Information (PII)</a></li>
-				</ul>
-				<h4>January 2017</h4>
-				<ul>
-		
-		<li>29 - <a href="blog/2017/requirements-misuse-and-abuse-cases.html">Requirements Misuse and Abuse Cases</a></li>
-		
-		<li>21 - <a href="blog/2017/sdlc-training.html">Software Development Life Cycle (SDLC) Training</a></li>
-		
-		<li>14 - <a href="blog/2017/sdlc-process-comparison.html">Software Development Life Cycle (SDLC) Process Comparison</a></li>
-		
-		<li>08 - <a href="blog/2017/software-vulnerability-sql-injection.html">Software Vulnerability - SQL Injection</a></li>
-				</ul>
-				<h4>December 2016</h4>
-				<ul>
-		
-		<li>17 - <a href="blog/2016/db-comparison-oracle-vs-dynamo.html">Database Comparison: Oracle 12c vs. Amazon DynamoDB</a></li>
-				</ul>
-				<h4>January 2016</h4>
-				<ul>
-		
-		<li>04 - <a href="blog/2016/Optimistic-view-of-2016.html">The optimistic view of 2016</a></li>
-	</ul>
+        
+        <p>Alex Makumbi</p>
+	<p><em>08 March 2017</em></p>
+
+	<p><p>Building a secure software product by going through the Software Development Life-Cycle (SDLC) processes (requirements, design, develop, test and deploy) following best practices, one can assume that the product can be built robust enough needing minimum attention once it is in service. As we’ve learned in this course, that reality does not exist for public actively used software products; even for privately used software products for that matter. Steps have to be taken early in the SDLC to address worse case scenarios such beaches into the product, vulnerabilities found in code etc. </p>
+<p>Incident management and patch management plans developed early in the SDLC of a software product aim to establish controls to ensure damage to the product is mitigated or is restored as quickly as possible. Incident management outlines policy guidelines that an incident team must follow which can include for example the duration a software product can be offline (depending on the tolerance level of the organization), how incidents are archived, a team of incident responders is identified, trained and provided necessary tools etc. These guidelines are well documented early in the SDLC before the product goes live.</p>
+<p>Patch management carefully outlines policy guidelines on how to approach software patches keeping in mind the time it would take to make patches, how much it would cost to make patches and time and cost of testing. Policies clearly communicate to software engineers what type of patches to prioritize and which tools to use in addressing various patches.</p>
+<p>Incident and Patch management are necessary activities that ensure that once the software product is deployed, controls are in place to identify, protect, detect, respond and recover a software product from a breach or vulnerability. </p>
+<p><strong>Sources</strong></p>
+<p>National Institute of Standards and Technology. (2014). Framework for Improving Critical Infrastructure Cybersecurity. Retrieved from <a href="https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf">https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf</a></p></p>
+
+	<hr />
 	
 		</div>
 		<div id="push"></div>
@@ -121,9 +90,9 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/prettify.js"></script>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/prettify.js"></script>
     
   </body>
 </html>
