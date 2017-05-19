@@ -6,7 +6,7 @@
 - [About](https://makumbi.github.io/output/about.html)
 - [Archives](https://makumbi.github.io/output/archive.html)
 
-Welcome! My name is Alex Makumbi and I am currently pursuing a B.S in Software Development and Security at University of Maryland University College expected to graduate December 2017.
+Welcome! My name is Alex Makumbi and I am currently pursuing a second degree in Software Development and Security at University of Maryland University College expected to graduate December 2017.
 
 In 2014, I graduated from Christopher Newport University with a B.A in Political Science and Economics with an intention of working alongside economic development professionals in Africa, specifically, in Uganda, my country of origin. 
 
