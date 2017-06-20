@@ -40,7 +40,7 @@ Once the user indicates that they want to deposit N amount in account, the ATM s
 7. Withdrawal N > $1,000 from checking account.
 8. Withdrawal N < $10 from savings account.
 
-### Test tools that would employ to perform testing
+### Test tools that to perform testing
 
 The tools that I would employ to test sensitive data exposure vulnerability on ATM system would be Katalon Studio and Hp Fortify on Demand. Katalon Studio has the capability of conducting automated tests as well as manual test with the UI layer of an application.
 

@@ -12,7 +12,7 @@ Software Development Life Cycle (SDLC) is a well-defined, structured sequence of
 These steps include:
 
 1. **Communication**
->> This is the step that a user (customer) approaches a software developer or software company requesting for a desired software product. The user submits is desired software product in a document explaining how he/she wants it to function etc.…
+>> This is the step that a user (customer) approaches a software developer or software company requesting for a desired software product. The user submits the desired software product in a document explaining how he/she wants it to function etc.…
 
 2. **Requirement Gathering**
 >> From now onwards the software developer or software company takes over. A brainstorming process takes place. Each stakeholder of the product is interviewed to learn as much as possible about the requirements of the product. Questionnaires are handed out among others. The objective in this phase is to gather as much information as possible.

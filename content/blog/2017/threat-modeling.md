@@ -5,12 +5,12 @@ tags=blog
 status=published
 ~~~~~~
 
-Building on the previous assignment where we discussed misuse/abuse case using ATM machine as an example, this week we discuss the threat modeling process. Threat modeling ranks threats during software design identifying which assets or components are most critical to the business and ranks them according to damage a threat would cause to the business. This ranking helps teams prioritize energy and resources on high ranking assets during a breach in an effort to mitigate damage. As a result, security code review of components whose threat modeling has ranked with high risk threat is prioritized.
+Building on the previous article where we discussed [misuse/abuse case](https://makumbi.github.io/output/blog/2017/requirements-misuse-and-abuse-cases.html "misuse/abuse cases") using ATM machine as an example, this week we discuss the threat modeling process. Threat modeling ranks threats during software design identifying which assets or components are most critical to the business and ranks them according to damage a threat would cause to the business. This ranking helps teams prioritize energy and resources on high ranking assets during a breach in an effort to mitigate damage. As a result, security code review of components whose threat modeling has ranked with high risk threat is prioritized.
 
-Threat modeling process encompasses three high level steps which are decompose the application, determine and rank threats, and determine countermeasures and mitigation. This paper is going to delve deep into each step to get a better understanding how threat modeling is implemented.
+Threat modeling process encompasses three high level steps which are decompose the application, determine and rank threats, and determine countermeasures and mitigation. We are going to delve deep into each step to get a better understanding how threat modeling is implemented.
 
 **Decompose the Application**
->> As the first step in threat modeling process, attention is focused on gaining an understanding of the application and how it interacts with external entities. What does this mean? It means identifying entry points an attacker can use to exploited the application, identify trust levels as it pertains to access levels among others.
+>> As the first step in threat modeling process, attention is focused on gaining an understanding of the application and how it interacts with external entities. What does this mean? It means identifying entry points an attacker can use to exploit the application, identify trust levels as it pertains to access levels among others.
 
 **Determine and rank threats**
 >> It is not hard to guess what this step is all about. Threats are determined and ranked using a threat categorization methodology. OWASP outlines a threat categorization known as STRIDE, which we will be using to rank threats to the ATM machine. STRIDE stands for – Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, and Elevation of privilege.
