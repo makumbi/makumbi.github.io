@@ -6,8 +6,8 @@
     <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Mon, 19 Jun 2017 22:10:05 -0400</pubDate>
-    <lastBuildDate>Mon, 19 Jun 2017 22:10:05 -0400</lastBuildDate>
+    <pubDate>Wed, 21 Jun 2017 18:24:50 -0400</pubDate>
+    <lastBuildDate>Wed, 21 Jun 2017 18:24:50 -0400</lastBuildDate>
 
     <item>
       <title>Bridge the Gap of Understanding Between Human Endpoints and Information Security Awareness</title>
@@ -35,6 +35,18 @@
 &lt;p&gt;McAfee Labs. (2016). “McAfee Labs explores top threats expected in the coming year” McAfee Labs – Intel Security. Retrieved from &lt;a href=&quot;https://www.mcafee.com/us/resources/reports/rp-threats-predictions-2017.pdf&quot;&gt;https://www.mcafee.com/us/resources/reports/rp-threats-predictions-2017.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ranipeta S Shilpa. (2017). “How human learning, and not just machine learning, can keep us cyber-secure” The News Minute – Cyber Security. Retrieved from &lt;a href=&quot;http://www.thenewsminute.com/article/how-human-learning-and-not-just-machine-learning-can-keep-us-cyber-secure-58439&quot;&gt;http://www.thenewsminute.com/article/how-human-learning-and-not-just-machine-learning-can-keep-us-cyber-secure-58439&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Taylor Brian. (2016). “Endpoint security: People are the biggest source of vulnerability” TechRepublic. Retrieved from &lt;a href=&quot;http://www.techrepublic.com/article/endpoint-security-people-are-the-biggest-source-of-vulnerability/&quot;&gt;http://www.techrepublic.com/article/endpoint-security-people-are-the-biggest-source-of-vulnerability/&lt;/a&gt;&lt;/p&gt;
+	</description>
+    </item>
+    <item>
+      <title>OWASP Testing Guide - &apos;Test Early, Test Often&apos;</title>
+      <link>http://jbake.org/blog/2017/OWASP-Testing-Guide-Test-Early-Test-Often.html</link>
+      <pubDate>Fri, 14 Apr 2017 00:00:00 -0400</pubDate>
+      <guid isPermaLink="false">blog/2017/OWASP-Testing-Guide-Test-Early-Test-Often.html</guid>
+      	<description>
+	&lt;p&gt;The “test early, test often” strategy improves software security because the testing for software vulnerabilities is carried out throughout the entire development life-cycle. The testing of software does not wait until the software is created - waiting to test until the software is created is often ineffective and cost-prohibitive. However, with “test early, test often” the testing is done early to ensure that when a bug is detected early within the Software Development Life-Cycle (SDCL) it can be handled appropriately at that exact moment resulting in cut costs and increased effectiveness.&lt;/p&gt;
+&lt;p&gt;As &lt;a href=&quot;https://www.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents&quot; title=&quot;OWASP Testing Guide&quot;&gt;OWASP Testing Guide outlines&lt;/a&gt;, an effective testing program should have components that test – People, Process and Technology. The implementation of “test early, test often” strategy greatly improves software security because people working on a software product are able to be tested early and often to make sure they have an adequate education and awareness as it pertains to their respective roles. People would also be tested for their understanding of processes to ensure they are able to follow security policies and standards. Testing technology early and often to make sure process are effective in implementation all enhances the improvement of software security (Muller Andrew and Meucci Matteo, 2016). &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sources:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Muller Andrew and Meucci Matteo. 2016. OWASP Testing Guide 4.0. Creative Commons (CC) Attribution Share-Alike. Retrieved from &lt;a href=&quot;https://www.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents&quot;&gt;https://www.owasp.org/index.php/OWASP_Testing_Guide_v4_Table_of_Contents&lt;/a&gt; (On 20th 2017)&lt;/p&gt;
 	</description>
     </item>
     <item>
