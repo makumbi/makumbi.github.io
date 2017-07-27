@@ -1,5 +1,5 @@
 title=The Over Trusting Application User and the Need for Cyber Hygiene 
-date=2017-07-20
+date=2017-07-27
 type=post
 tags=blog
 status=published
