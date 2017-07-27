@@ -6,9 +6,43 @@
     <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Wed, 21 Jun 2017 18:24:50 -0400</pubDate>
-    <lastBuildDate>Wed, 21 Jun 2017 18:24:50 -0400</lastBuildDate>
+    <pubDate>Thu, 27 Jul 2017 16:55:38 -0400</pubDate>
+    <lastBuildDate>Thu, 27 Jul 2017 16:55:38 -0400</lastBuildDate>
 
+    <item>
+      <title>The Over Trusting Application User and the Need for Cyber Hygiene</title>
+      <link>http://jbake.org/blog/2017/The-Over-Trusting-Application-User-and-the-Need-for-Cyber-Hygiene.html</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
+      <guid isPermaLink="false">blog/2017/The-Over-Trusting-Application-User-and-the-Need-for-Cyber-Hygiene.html</guid>
+      	<description>
+	&lt;p&gt;Growing up many of us heard our parents say things like “never get in a car with a stranger” and “look twice before you cross the road”. This was an effort to teach us early in life that the world can be unforgiving for those who lack a sense of awareness. Today the world is at our fingertips needing only a simple push of a button; it follows us to our bathrooms, kitchens and our kids’ bedrooms. In a digital social society, we interact with applications each time we access the internet for online services to conduct banking transactions, shop for the best deals, look for jobs, and stream music or videos. Applications are intertwined with our lives but sadly a large number of us lack basic cyber hygiene; we have become increasingly trusting of people making the applications.&lt;/p&gt;
+&lt;p&gt;The site Stack Overflow also known as “the world’s programmer community” with roughly 4.7 million users conducted a survey of 45 questions to its users about themselves and technology and jobs etc. The answers of 56,000 people show that &lt;a href=&quot;https://insights.stackoverflow.com/survey/2016#work&quot; title=&quot;self-taught developers dominate technology with 67%&quot;&gt;self-taught developers dominate technology with 67%&lt;/a&gt; of the developers who responded. That insight tells us that there is a high likelihood that applications we use today may be designed, developed, tested and deployed by a developer or developers who have limited application security awareness trusting users to protect themselves.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How many of us stop to ask whether a form(s) an application asks us to fill in (whether to create an account, register for a newsletter, purchase airline tickets, or apply for a job) is absolutely needed to accomplish a particular task is at hand?&lt;/li&gt;
+  &lt;li&gt;How many of us first verify that the website we are using to download software is secure or that the software we are downloading isn’t malicious?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The simple truth is, this problem of security in the arena of applications stems from our pursuit of convenience. It takes a lot of work to constantly be on the lookout of new software updates, backing-up data and maintaining passwords for the numerous applications we use each day amongst other cyber hygiene practices. On the other side of the coin, it is more convenient for application developers to only be concerned about functionality with the user’s experience, meeting deadlines and deploying applications as quickly as possible being the main priorities. That being said, software security assurance is often hard, long and boring and may present as a hurdle to those priorities.&lt;/p&gt;
+&lt;h4&gt;Cyber Hygiene Tips; Protect Yourself as a Cyber Citizen&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Limit Personal Identifiable Information on Social Media.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you already have a social media account or creating one, &lt;strong&gt;only enter the basic information required&lt;/strong&gt; to get the account activated and never provide excessive information that could put you at risk; this includes photographs of sensitive documents. If you’ve already entered information like date of birth, home address, location details and mobile numbers set it to hidden; or better yet remove it from your profile.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Use $tr0ng3r passwords and change them at least once per year.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When choosing a password &lt;strong&gt;make it long, strong and unique to that account&lt;/strong&gt;. Use uncommon word phrases instead of single words. It’s entirely up to you to protect your account so never use the same password multiple times.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Before clicking anything, stop, think and check if it is expected, valid and trusted.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Stop. Think. Ask yourself if the message was expected. Do you know the person who sent it, and is it really from them? Could it be a phishing email – a message that looks exactly like one you might receive from a familiar organization but is really a set-up to get your information.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Keep computer software up-to-date using auto-update.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Security patches are released often and are essential to your protection. Check to see you have the latest greatest version software available, normally new software versions correspond to new development in the software.&lt;/p&gt;
+&lt;p&gt;Similar to how secure applications are designed, developed, tested and deployed to never trust you the user, you as a user should never trust the application and the developers who built it. Think about the information you are giving the application, is it more than what is required to carry out an action? What personal information are you giving away on social media? Before downloading software or streaming videos or clicking a link in your email or messaging app etc. take steps to ensure it is from a verified source.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.dhs.gov/stopthinkconnect-cyber-awareness-coalition&quot; title=&quot;Become Cyber Aware – Start Practicing Cyber Hygiene&quot;&gt;Become Cyber Aware – Start Practicing Cyber Hygiene&lt;/a&gt;&lt;/p&gt;
+	</description>
+    </item>
     <item>
       <title>Bridge the Gap of Understanding Between Human Endpoints and Information Security Awareness</title>
       <link>http://jbake.org/blog/2017/bridging-the-security-awareness-gap.html</link>
